@@ -1,0 +1,139 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie"> <![endif]-->
+<!--[if IE 7]> <html class="no-js ie7 oldie" > <![endif]-->
+<!--[if IE 8]> <html class="no-js ie8 oldie" > <![endif]-->
+<!--[if IE 9]> <html class="no-js ie9 oldie" > <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset='UTF-8'/>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+  <title>The Modelling House - Finding Sunlight in Cities - Research Project</title>
+  <meta name="description" content="The Modelling House - Finding Sunlight in Cities - Research Project">
+
+  <link href='../css/bootstrap.css' rel='stylesheet' />
+  <link href='../css/main.css' rel='stylesheet' />
+
+  <script src="../js/jquery.js"></script>
+  <script src="../js/main.js"></script>
+
+  <script src="https://use.typekit.net/riu8hdk.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+
+</head>
+
+<body>
+
+
+<div class="scrolled menu project-menu">
+  <a href="../#" class=" menu-logo-img"></a>
+    <div class="menu-social">
+      <a href="https://twitter.com/modellinghouse" target="_blank" class="menu-social-twitter hidden-xs"></a>
+	  <a href="https://github.com/themodellinghouse" target="_blank" class="menu-social-github hidden-xs"></a>
+	  <a href="https://nz.linkedin.com/in/laurent-lebreton-68365666" target="_blank" class="menu-social-linkedin hidden-xs"></a>
+      <a href="" class="menu-social-menu visible-xs"></a>
+  </div>
+    <div class="menu-social-menu-panel visible-xs">
+	<a href="https://twitter.com/modellinghouse" target="_blank" class="menu-social-twitter"></a>
+	<a href="https://github.com/themodellinghouse" target="_blank" class="menu-social-github"></a>
+	<a href="https://nz.linkedin.com/in/laurent-lebreton-68365666" target="_blank" class="menu-social-linkedin "></a>
+  </div>
+</div>
+
+
+
+<a href="../#work" class="close"></a>
+<div  class="intro panel" style="background: url('../img/the_modelling_house_work_shades-bckgrnd.png') no-repeat center center fixed;
+                                      -webkit-background-size: cover;
+                                      -moz-background-size: cover;
+                                      -o-background-size: cover;
+                                      background-size: cover;" >
+
+    
+    <a href="#project" class="more"></a>
+
+    <div class="intro-title intro-project-title container">
+      <h1>Finding Sunlight</h1>
+    </div>
+
+    <div class="intro-client">
+
+      <div class="intro-client-research"><div class="intro-client-line-light"></div>Research Project</div>
+    </div>
+
+
+
+</div>
+
+<div class="content">
+
+  <section id="project" class="project panel">
+    <div class="project-logo-header"></div>
+    <div class="container">
+	  <div class="col-xs-12 project-title">
+	    <h2>Mapping the numbers of hours of direct sunlight in cities </h2>
+	  </div>
+      <div class="col-sm-6 project-text">
+		<p>
+        Hours of daylight is given from the interval between sunrise and 
+		sunset at a specific location on Earth. Hours of daylight through 
+		the year are calculated using the relative position of the sun 
+		defined by the azimuth and zenith angles, from a point of observation 
+		at a given longitude, latitude and altitude.
+		</p>
+		<p>
+		However, in the case of rugged landscapes (hills, mountains) or urban 
+		environments (buildings), daylight hours will not necessarily reflect 
+		the total number of hours of direct sunlight (HDS) that an observer 
+		will receive in a day. HDS data is much more complex to calculate and 
+		must be derived from volumetric projections of local topographic 
+		features and physical objects such as buildings and trees.
+		</p>
+		<p>
+		The Modelling House developed an algorithm to generate Boolean grids 
+		(e.g. sun / no sun) at any given time of the day using topographic 
+		raster grids. The model computes and stores the 360 degree horizon 
+		line for every raster cell. The horizon raster dataset is then 
+		compared with the sun’s azimuth and zenith at a specific time to 
+		determine areas of direct sunlight or shade. By querying horizon raster 
+		grids, we can quickly estimate the volumetric projection of buildings, 
+		trees or hills and animate in time the path of shades over horizontal surfaces.
+		</p>
+		<p>
+		Whether we are looking at cities or regions with rugged landscapes, 
+		knowing precisely when the sun will appear or disappear and how much 
+		direct sunlight a location will receive is relevant to a wide variety of 
+		domains such as:
+		</p>
+		<ul>
+			<li>Real estate</li>
+			<li>Transportation and road safety</li>
+			<li>Solar energy</li>
+			<li>Agriculture and gardening in general</li>
+			<li>Hospitality</li>
+			<li>Outdoor activities</li>
+		</ul>
+		<p><a href="http://www.nzherald.co.nz/opinion/news/article.cfm?c_id=466&objectid=11419945" target="_blank">
+		&rarr; The New Zealand Herald - You can't beat Wellington on a good day: Interactive mapping hours of direct sunlight</a></p>
+
+
+      </div>
+      <div class="col-sm-6 project-more">
+		
+		<img class="img-responsive" src="wellington-sun-december-small.png"></img>
+		<p class="caption">Average daily hours of direct sunlight in December, Wellington City </p>
+		
+		<img class="img-responsive" src="wellington-sunrise-sunset-solstices.gif"></img>
+		<p class="caption">Instant shade through the day (5am to 10pm) in Wellington City at 
+		the winter solstice (21st June, left) and summer solstice (21st December, right)</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+
+</body>
+</html>
