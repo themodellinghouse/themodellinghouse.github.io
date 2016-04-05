@@ -862,7 +862,7 @@ display: none;
 .project-title {
     border-bottom: 1px solid #1B1E17;
 	margin-bottom:30px;
-	padding: 0 25px;
+	padding: 0;
 }
 
 .project-text li {
@@ -881,11 +881,11 @@ display: none;
 }
 
 .project-text {
-    padding: 0 25px;
+    padding: 0;
 }
 
 .project-more {
-    padding: 0 25px;
+    padding: 0;
 }
 
 @media (min-width: 801px){
