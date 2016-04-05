@@ -1,13 +1,13 @@
 $(function(){
   	$( document ).on( 'touchmove', function( ev )
 	{
-		if (!$( ev.target ).parents().hasClass( 'content' ))
+		if (!$( ev.target ).parents().hasClass( 'content' ) && !$( ev.target ).parents().hasClass( 'intro' ))
 		{ev.preventDefault();}
 	});
 
   $(window).scroll(function(){
 
-    var scrollPosition = $(this).scrollTop() ;
+    var scrollPosition = $(this).scrollTop() ; 
 
     if (scrollPosition> $(window).height() - 60 ){
       $('body').addClass('scrolled')
