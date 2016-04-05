@@ -1,5 +1,9 @@
 $(function(){
-
+  	$( document ).on( 'touchmove', function( ev )
+	{
+		if (!$( ev.target ).parents().hasClass( 'content' ))
+		{ev.preventDefault();}
+	});
 
   $(window).scroll(function(){
 
