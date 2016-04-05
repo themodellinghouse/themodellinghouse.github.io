@@ -127,7 +127,6 @@ a.more:hover, a.more:active, a.more:focus {
 
 
 
-
 .line{
   border-bottom: 1px solid #495042;
 }
@@ -171,14 +170,14 @@ a.more:hover, a.more:active, a.more:focus {
 
 /* --------------INTRO----------------- */
 
-#bg-top {
+#bg-top, #bg-bottom {
   position: fixed; 
   top: -50%; 
   left: -50%; 
   width: 200%; 
   height: 200%;
 }
-#bg-top img {
+#bg-top img, #bg-bottom img {
   position: absolute; 
   top: 0; 
   left: 0; 
@@ -187,6 +186,13 @@ a.more:hover, a.more:active, a.more:focus {
   margin: auto; 
   min-width: 50%;
   min-height: 50%;
+}
+
+#bg-bottom {
+	display:none;
+}
+.scrolled #bg-bottom {
+	display:block;
 }
 
 .intro{
@@ -1000,7 +1006,7 @@ a.more:hover, a.more:active, a.more:focus {
 }
 
 .contact-details .row {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .contact-details .container {
@@ -1085,11 +1091,7 @@ a.more:hover, a.more:active, a.more:focus {
     letter-spacing: 0;
 }
 .footer-bckgrnd {
-background: url('../img/contact-bckgrnd.png') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+
     position: fixed;
     left: 0;
     right: 0;
