@@ -5,7 +5,12 @@ $(function(){
 		{ev.preventDefault();}
 	});
 
-  $(window).scroll(function(){
+	/*$('body').bind('touchmove', function(e) { 
+    console.log($(this).scrollTop()); // Replace this with your code.
+});*/
+	
+	
+  $(window).bind("scroll",function(){
 
     var scrollPosition = $(this).scrollTop() ; 
 
