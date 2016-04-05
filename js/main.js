@@ -1,7 +1,7 @@
 $(function(){
-  	$( document ).on( 'touchmove', function( ev )
-	{
-		if (!$( ev.target ).parents().hasClass( 'content' ) && !$( ev.target ).parents().hasClass( 'intro' ))
+  	$(window).on( 'touchmove', function( ev )
+	{ 
+		if (!$( ev.target ).parents().hasClass( 'content' ))
 		{ev.preventDefault();}
 	});
 
@@ -13,7 +13,7 @@ $(function(){
       $('body').addClass('scrolled')
     }else{
       $('body').removeClass('scrolled')
-      window.location.hash = '';
+      /*window.location.hash = '';*/
       $(".menu-nav a").removeClass('active');
     }
 
@@ -23,7 +23,7 @@ $(function(){
         && $(this).offset().top + $(this).height() > window.pageYOffset + 10
         && $(this).attr('id') != ''
         ) {
-            window.location.hash = $(this).attr('id');
+            /*window.location.hash = $(this).attr('id');*/
             $(".menu-nav a.active").removeClass('active');
             $(".menu-nav a[href='#"+$(this).attr('id')+"']").addClass('active');
         }
@@ -31,7 +31,7 @@ $(function(){
 
     $(this).scrollTop(scrollPosition);
 
-    console.log($(this).scrollTop())
+    /*console.log($(this).scrollTop())*/
   })
 
   $(".menu-nav a, .more").on('click',function (e) {
@@ -42,7 +42,7 @@ $(function(){
 	    $('html, body').stop().animate({
 	        'scrollTop': $target.offset().top
 	    }, 900, 'swing', function () {
-	        window.location.hash = target;
+	        /*window.location.hash = target;*/
 	    });
   })
   
@@ -52,7 +52,7 @@ $(function(){
       $('html, body').stop().animate({
           'scrollTop': 0
       }, 900, 'swing', function () {
-          window.location.hash = '';
+          /*window.location.hash = '';*/
       });
   })
   
