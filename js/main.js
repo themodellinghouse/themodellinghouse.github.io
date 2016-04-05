@@ -10,11 +10,11 @@ $(function(){
 });*/
 	
 	
-  $(window).bind("scroll",function(){
+  $('.content').bind("scroll",function(){
 
     var scrollPosition = $(this).scrollTop() ; 
 
-    if (scrollPosition> $(window).height() - 60 ){
+    if (scrollPosition> $(window).height() - 60 - 10 ){
       $('body').addClass('scrolled')
     }else{
       $('body').removeClass('scrolled')
@@ -24,28 +24,32 @@ $(function(){
 
     $('section').each(function(){
         if (
-           $(this).offset().top < window.pageYOffset + 10
-        && $(this).offset().top + $(this).height() > window.pageYOffset + 10
-        && $(this).attr('id') != ''
+         /*  $(this).offset().top < 10
+        && $(this).offset().top + $(this).height() > 10*/
+
+        $(this).offset().top  < 60 +10
+		/*&& $(this).offset().top  < $(this).parent().height()*/
         ) {
             /*window.location.hash = $(this).attr('id');*/
+			console.log($(this).attr('id'))
+			console.log($(this).offset().top)
             $(".menu-nav a.active").removeClass('active');
             $(".menu-nav a[href='#"+$(this).attr('id')+"']").addClass('active');
         }
     });
 
-    $(this).scrollTop(scrollPosition);
+    /*$(this).scrollTop(scrollPosition);*/
 
     /*console.log($(this).scrollTop())*/
   })
 
-  $(".menu-nav a, .more").on('click',function (e) {
+  $(".menu-nav a, .intro-nav a, .more").on('click',function (e) {
 	    e.preventDefault();
 	    var target = this.hash;
 	    var $target = $(target);
 
-	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top
+	    $('.content').stop().animate({
+	        'scrollTop': -60+$target.parent().scrollTop()+$target.offset().top
 	    }, 900, 'swing', function () {
 	        /*window.location.hash = target;*/
 	    });
@@ -54,7 +58,7 @@ $(function(){
   
   $(".menu-home").on('click',function (e) {
       e.preventDefault();
-      $('html, body').stop().animate({
+      $('.content').stop().animate({
           'scrollTop': 0
       }, 900, 'swing', function () {
           /*window.location.hash = '';*/
