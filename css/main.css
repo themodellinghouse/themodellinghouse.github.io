@@ -173,7 +173,8 @@ a.more:hover, a.more:active, a.more:focus {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  /*background-size: cover;*/
+  background-size:100% auto;
     position: fixed;
     left: 0;
     right: 0;
