@@ -171,19 +171,19 @@ a.more:hover, a.more:active, a.more:focus {
 /* --------------INTRO----------------- */
 
 #bg-top, #bg-bottom {
-  position: fixed; 
-  top: -50%; 
-  left: -50%; 
-  width: 200%; 
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
   height: 200%;
 }
 #bg-top img, #bg-bottom img {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  margin: auto; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
   min-width: 50%;
   min-height: 50%;
 }
@@ -541,7 +541,7 @@ a.more:hover, a.more:active, a.more:focus {
 }
 .menu-social-menu-panel{
   display:none;
- 
+
 }
 
 .scrolled .menu-social-menu-panel.visible{
@@ -703,7 +703,7 @@ a.more:hover, a.more:active, a.more:focus {
   }
   .about-text {
     width: 80%;
-    margin: 150px auto 0 auto;
+    margin: 100px auto 0 auto;
   }
   .about-line {
       width:100%;
@@ -876,7 +876,7 @@ a.more:hover, a.more:active, a.more:focus {
     background: repeating-linear-gradient( -45deg, #f6f9e5, #f6f9e5 10px, #eef7da 10px, #eef7da 13px );
 }
 
-.project-logo-header{    
+.project-logo-header{
 	background: url('../img/the_modelling_house_logolight_80px-01.png') center no-repeat;
     background-size: 40px 40px;
     width: 40px;
@@ -885,7 +885,7 @@ a.more:hover, a.more:active, a.more:focus {
     padding: 50px 0;
 }
 
-    
+
 
 @media (min-width: 801px){
   .project-logo-header {
