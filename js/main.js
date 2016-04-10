@@ -1,18 +1,18 @@
 $(function(){
   	$(window).on( 'touchmove', function( ev )
-	{ 
+	{
 		if (!$( ev.target ).parents().hasClass( 'content' ))
 		{ev.preventDefault();}
 	});
 
-	/*$('body').bind('touchmove', function(e) { 
+	/*$('body').bind('touchmove', function(e) {
     console.log($(this).scrollTop()); // Replace this with your code.
 });*/
-	
-	
+
+
   $('.content').bind("scroll",function(){
 
-    var scrollPosition = $(this).scrollTop() ; 
+    var scrollPosition = $(this).scrollTop() ;
 
     if (scrollPosition> $(window).height() - 60 - 10 ){
       $('body').addClass('scrolled')
@@ -31,8 +31,6 @@ $(function(){
 		/*&& $(this).offset().top  < $(this).parent().height()*/
         ) {
             /*window.location.hash = $(this).attr('id');*/
-			console.log($(this).attr('id'))
-			console.log($(this).offset().top)
             $(".menu-nav a.active").removeClass('active');
             $(".menu-nav a[href='#"+$(this).attr('id')+"']").addClass('active');
         }
@@ -54,8 +52,8 @@ $(function(){
 	        /*window.location.hash = target;*/
 	    });
   })
-  
-  
+
+
   $(".menu-home").on('click',function (e) {
       e.preventDefault();
       $('.content').stop().animate({
@@ -64,7 +62,7 @@ $(function(){
           /*window.location.hash = '';*/
       });
   })
-  
+
     $(".menu-social-menu").on('click',function (e) {
       e.preventDefault();
       $('.menu-social-menu-panel').toggleClass('visible')
