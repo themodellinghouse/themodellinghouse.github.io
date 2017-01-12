@@ -1,0 +1,3 @@
+AuthUserFile /river-plastic-map/.htpasswd
+AuthName "Please Login"
+AuthType Basic
