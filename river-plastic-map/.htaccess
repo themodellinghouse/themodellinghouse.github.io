@@ -1,3 +1,0 @@
-AuthUserFile themodellinghouse.github.io/river-plastic-map/.htpasswd
-AuthName "Please Login"
-AuthType Basic
